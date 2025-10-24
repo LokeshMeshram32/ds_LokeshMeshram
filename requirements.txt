@@ -1,0 +1,39 @@
+# ============================================================
+# Data Science Assignment - Lokesh Meshram
+# Compatible with Google Colab, VS Code, and Jupyter
+# Python Version: 3.10 or above
+# ============================================================
+
+# Core Libraries
+pandas==2.2.3
+numpy==1.26.4
+
+# Visualization Libraries
+matplotlib==3.8.4
+seaborn==0.13.2
+
+# Statistical & Scientific Computing
+scipy==1.13.1
+
+# Machine Learning and Data Processing
+scikit-learn==1.5.2
+
+# Time and Date Utilities
+python-dateutil==2.9.0
+pytz==2024.1
+
+# Jupyter / VS Code Notebook Support
+ipykernel==6.29.5
+notebook==7.2.2
+jupyter==1.1.1
+
+# Optional but Recommended (cleaner warnings, progress bars)
+tqdm==4.66.4
+
+# ============================================================
+# To install all dependencies:
+#   pip install -r requirements.txt
+#
+# If using Google Colab, you can also run inside a notebook:
+#   !pip install -r requirements.txt
+# ============================================================
