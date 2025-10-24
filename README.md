@@ -1,41 +1,18 @@
-# 📊 Data Science Assignment – Lokesh Meshram
+# 📊 Data Science Project – Lokesh Meshram
 
-## 📁 Folder Structure
-ds_LokeshMeshram/
-│
-├── Notebook1.ipynb
-├── ds_report.pdf
-├── README.md
-├── csv_files/
-│ ├── market_sentiment.csv
-│ ├── trader_data.csv
-│ └── any_other_dataset.csv
-├── outputs/
-│ ├── daily_correlation_plot.png
-│ ├── lagged_corr_heatmap.png
-│ └── top_accounts_analysis.png
-└── requirements.txt
+### Overview
+This project explores how **market sentiment** influences **trading activity**.  
+It combines daily sentiment data with trade-level information to see whether fear or greed in the market has any measurable impact on the number and size of trades or on profit and loss patterns.
 
-yaml
-Copy code
-
----
-
-## 🧠 Project Overview
-This project analyzes **the relationship between market sentiment and trading activity** using two key datasets:
-
-1. **Market Sentiment Data** – Daily index values that measure the level of investor emotion from “Extreme Fear” to “Extreme Greed”.
-2. **Trader Data** – Transaction-level records with timestamps, trade sizes, leverage, and profit/loss information.
-
-**Objective:**  
-To explore whether investor sentiment has a measurable effect on trading behavior — including trade count, total volume, and profit/loss patterns — using statistical and exploratory data analysis.
+The analysis was done entirely in Python using pandas, matplotlib, seaborn, and related libraries.  
+All steps from cleaning to visualization are inside the notebook below.
 
 ---
 
 ## 🚀 Google Colab Notebook
 You can run or review the full analysis interactively here:
 
-👉 **[Open in Google Colab](https://colab.research.google.com/drive/<YOUR_COLAB_NOTEBOOK_ID>)**
+👉 **[Open in Google Colab](https://colab.research.google.com/drive/1WLm8ao1Ebihai3GOrJ9NkIietqy5doF1?usp=sharing)**
 
 ---
 
@@ -98,69 +75,39 @@ All visualizations are exported in `/outputs`.
 ---
 
 ## 🧾 Requirements
-Install dependencies using the provided requirements file:
+Install dependencies using the provided requirements.txt file:
 
 ```bash
 pip install -r requirements.txt
-Minimal environment versions:
-
-Package	Version
-pandas	>= 2.2.0
-numpy	>= 1.26.0
-matplotlib	>= 3.8.0
-seaborn	>= 0.13.0
-scipy	>= 1.11.0
-scikit-learn	>= 1.3.0
+```
 
 🧩 How to Run Locally
-Clone or unzip this folder:
-
-bash
-Copy code
-unzip ds_LokeshMeshram.zip
-cd ds_LokeshMeshram
-Open Notebook1.ipynb in Jupyter Notebook or upload to Google Colab.
-
-Run all cells sequentially from top to bottom.
-
-Check generated results in:
-
-/csv_files → intermediate cleaned datasets
-
-/outputs → generated charts and summary plots
+- Clone or unzip this folder.
+- Create and activate a virtual environment.
+- Install dependencies as per stated above.
+- Run all cells sequentially from top to bottom.
+- Check generated results in /outputs → generated charts and summary plots
 
 🧠 Summary of Findings
-Aspect	Observation
-Correlation Strength	Weak negative (−0.22 Pearson, −0.18 Spearman)
-Time-Lag Effect	Peak lag correlation around −2 days
-Account Patterns	High-leverage traders show inverse sentiment response
-Statistical Significance	Most correlations not significant at 95% confidence
-Recommendation	Combine sentiment with volatility and returns for predictive modeling
+- Aspect	Observation
+- Correlation Strength	Weak negative (−0.22 Pearson, −0.18 Spearman)
+- Time-Lag Effect	Peak lag correlation around −2 days
+- Account Patterns	High-leverage traders show inverse sentiment response
+- Statistical Significance	Most correlations not significant at 95% confidence
+- Recommendation	Combine sentiment with volatility and returns for predictive modeling
 
 ⚖️ Limitations
-Some missing trade timestamps may cause slight day-boundary mismatches.
-
-Sentiment values interpolated — may reduce variability.
-
-Correlation analysis does not imply causation.
-
-Market sentiment index lacks direct price/volatility integration.
+- Some missing trade timestamps may cause slight day-boundary mismatches.
+- Sentiment values interpolated may reduce variability.
+- Correlation analysis does not imply causation.
+- Market sentiment index lacks direct price/volatility integration.
 
 🔮 Future Improvements
-Integrate price volatility and return metrics with sentiment.
-
-Apply Granger causality tests for directional influence.
-
-Extend analysis to hourly windows for higher granularity.
-
-Cluster accounts using behavioral metrics (PnL variance, leverage usage).
-
-Experiment with machine learning models (Random Forest, XGBoost) for predictive insights.
+- Integrate price volatility and return metrics with sentiment.
+- Apply Granger causality tests for directional influence.
+- Extend analysis to hourly windows for higher granularity.
+- Cluster accounts using behavioral metrics (PnL variance, leverage usage).
+- Experiment with machine learning models (Random Forest, XGBoost) for predictive insights.
 
 👨‍💻 Author Information
-Author: Lokesh Meshram
-Course: Data Science & Analytics
-Instructor: Prof. S. S. Chiwande
-Institute: PCCOE
-Submission Date: October 2025
-
+- Author: Lokesh Meshram
